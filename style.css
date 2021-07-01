@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'NanumSquareRound';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 :root {
   /* color */
   --color-main: #0094cf;
@@ -49,4 +56,81 @@ button {
 	cursor: pointer;
 	border: none;
 	outline: none;
+}
+
+p, a, li, span {
+	font-family: 'NanumSquareRound';
+}
+
+/* haeder */
+#header {
+	width: 100%;
+}
+.header__top-menu {
+	display: flex;
+	justify-content: flex-end;
+	padding: 30px;
+}
+
+.header__top-menu li {
+	padding: 0px 8px;
+}
+
+.header__top-menu li a {
+	font-size: var(--font-micro);
+}
+
+/* nav */
+.navbar__wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+.navbar__logo {
+	cursor: pointer;
+}
+
+.navbar__menu {
+	display: flex;
+}
+
+.navbar__menu li h2 {
+	height: 24px;
+	line-height: 24px;
+	font-size: var(--font-regular);
+	padding: 0 16px;
+	cursor: pointer;
+}
+
+/* two depth menu */
+.depth__menu-wrap {
+	position: relative;
+	display: none;
+}
+
+.depth__menu-wrap {
+	width: 100%;
+	background-color: var(--color-dark-white);
+	border-bottom: 1px solid black;
+}
+.navbar__depth-wrap {
+	display: flex;
+	width: 100%;
+	height: 350px;
+	max-width: 1200px;
+	padding: 40px;
+	margin: auto;
+	justify-content: space-between;
+	position: absolute
+}
+
+.navbar__depth li {
+	padding: 8px 0;
+	text-align: center;
+}
+
+.navbar__depth .navbar__depth-title {
+	font-weight: var(--weight-semi-bold);
 }

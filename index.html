@@ -30,126 +30,130 @@
 
       <!-- Navbar -->
       <nav id="navbar">
-        <h1 class="navbar__logo">
-          <img src="imgs/logo.png" alt="서울도서관 로고" />
-        </h1>
-        <ul class="navbar__menu">
-          <li class="navbar__menu-item">
-            자료검색
-            <ul class="navbar__depth-wrap">
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">소장자료</li>
-                <li><a href="#">소장자료 검색</a></li>
-                <li><a href="#">DVD 검색</a></li>
-                <li><a href="#">연속간행물 검색</a></li>
-                <li><a href="#">전자책·오디오북</a></li>
-                <li><a href="#">구독학술 DB</a></li>
-                <li><a href="#">협력기관 DB</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">서울자료</li>
-                <li><a href="#">서울시 발간물</a></li>
-                <li><a href="#">OAK 리포지터리</a></li>
-                <li><a href="#">서울 관련 웹사이트</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">책! 책! 책!</li>
-                <li><a href="#">새로 들어온 책</a></li>
-                <li class="go"><a href="#">대출이 많은 책</a></li>
-                <li><a href="#">전시된 책</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">지식문화콘텐츠</li>
-                <li><a href="#">공공정보</a></li>
-                <li><a href="#">일상정보</a></li>
-                <li><a href="#">전문정보</a></li>
-              </div>
-            </ul>
-          </li>
-          <li class="navbar__menu-item">
-            도서관 이용
-            <ul class="navbar__depth-wrap">
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">이용안내</li>
-                <li><a href="#">도서관 이용시간</a></li>
-                <li><a href="#">회원증 발급</a></li>
-                <li><a href="#">대출·반납·연장·예약</a></li>
-                <li><a href="#">보존서고 자료</a></li>
-                <li><a href="#">시설·기기 이용</a></li>
-                <li><a href="#">도서관 이용예절</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">자료실 안내</li>
-                <li><a href="#">일반자료실</a></li>
-                <li><a href="#">디지털자료실</a></li>
-                <li><a href="#">서울자료실</a></li>
-                <li><a href="#">세계자료실</a></li>
-                <li><a href="#">장애인자료실</a></li>
-                <li><a href="#">디지털 사회혁신센터</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">특별전시공간</li>
-                <li><a href="#">서울기록 문화관</a></li>
-                <li><a href="#">옛시장실 복원 공간</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">함께하는 서비스</li>
-                <li><a href="#">책이음 서비스</a></li>
-                <li><a href="#">책바다 서비스</a></li>
-                <li><a href="#">책나래 서비스</a></li>
-                <li><a href="#">외국학술지 원문 복사</a></li>
-                <li><a href="#">사서에게 물어보세요</a></li>
-                <li><a href="#">도서관 정보나루</a></li>
-              </div>
-            </ul>
-          </li>
-          <li class="navbar__menu-item">
-            신청·참여
-            <ul class="navbar__depth-wrap">
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">신청</li>
-                <li><a href="#">희망도서 신청</a></li>
-                <li><a href="#">강좌 신청</a></li>
-                <li><a href="#">분실물 찾기</a></li>
-                <li><a href="#">단체방문 신청</a></li>
-                <li><a href="#">자원봉사 신청</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">참여</li>
-                <li><a href="#">서울도서관에 바란다</a></li>
-                <li class="go"><a href="#">자주 물어보는 질문</a></li>
-                <li><a href="#">서울에게 물어보세요</a></li>
-                <li><a href="#">자료기증·납본</a></li>
-                <li><a href="#">설문조사</a></li>
-              </div>
-            </ul>
-          </li>
-          <li class="navbar__menu-item">
-            도서관 소개
-            <ul class="navbar__depth-wrap">
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">도서관 소개</li>
-                <li><a href="#">인사말</a></li>
-                <li><a href="#">일반 현황</a></li>
-                <li><a href="#">로고</a></li>
-                <li><a href="#">조직·기구</a></li>
-                <li><a href="#">운영규정</a></li>
-                <li><a href="#">찾아오시는 길</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">도서관 소식</li>
-                <li class="go"><a href="#">공지사항</a></li>
-                <li><a href="#">보도자료</a></li>
-                <li><a href="#">도서관 갤러리</a></li>
-                <li><a href="#">서울도서관 TV</a></li>
-              </div>
-              <div class="navbar__depth">
-                <li class="navbar__depth-title">도서관 일정</li>
-                <li><a href="#">일정 및 행사</a></li>
-              </div>
-            </ul>
-          </li>
-        </ul>
+        <div class="navbar__wrap">
+					<h1 class="navbar__logo">
+						<img src="imgs/logo.png" alt="서울도서관 로고" />
+					</h1>
+					<ul class="navbar__menu">
+						<li class="navbar__menu-item">
+							<h2>자료검색</h2>
+						</li>
+						<li class="navbar__menu-item">
+							<h2>도서관 이용</h2>
+						</li>
+						<li class="navbar__menu-item">
+							<h2>신청·참여</h2>
+						</li>
+						<li class="navbar__menu-item">
+							<h2>도서관 소개</h2>
+						</li>
+					</ul>
+				</div>
+        <div class="depth__menu-wrap">
+          <ul class="navbar__depth-wrap depth01">
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">소장자료</li>
+              <li><a href="#">소장자료 검색</a></li>
+              <li><a href="#">DVD 검색</a></li>
+              <li><a href="#">연속간행물 검색</a></li>
+              <li><a href="#">전자책·오디오북</a></li>
+              <li><a href="#">구독학술 DB</a></li>
+              <li><a href="#">협력기관 DB</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">서울자료</li>
+              <li><a href="#">서울시 발간물</a></li>
+              <li><a href="#">OAK 리포지터리</a></li>
+              <li><a href="#">서울 관련 웹사이트</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">책! 책! 책!</li>
+              <li><a href="#">새로 들어온 책</a></li>
+              <li class="go"><a href="#">대출이 많은 책</a></li>
+              <li><a href="#">전시된 책</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">지식문화콘텐츠</li>
+              <li><a href="#">공공정보</a></li>
+              <li><a href="#">일상정보</a></li>
+              <li><a href="#">전문정보</a></li>
+            </div>
+          </ul>
+          <ul class="navbar__depth-wrap">
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">이용안내</li>
+              <li><a href="#">도서관 이용시간</a></li>
+              <li><a href="#">회원증 발급</a></li>
+              <li><a href="#">대출·반납·연장·예약</a></li>
+              <li><a href="#">보존서고 자료</a></li>
+              <li><a href="#">시설·기기 이용</a></li>
+              <li><a href="#">도서관 이용예절</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">자료실 안내</li>
+              <li><a href="#">일반자료실</a></li>
+              <li><a href="#">디지털자료실</a></li>
+              <li><a href="#">서울자료실</a></li>
+              <li><a href="#">세계자료실</a></li>
+              <li><a href="#">장애인자료실</a></li>
+              <li><a href="#">디지털 사회혁신센터</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">특별전시공간</li>
+              <li><a href="#">서울기록 문화관</a></li>
+              <li><a href="#">옛시장실 복원 공간</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">함께하는 서비스</li>
+              <li><a href="#">책이음 서비스</a></li>
+              <li><a href="#">책바다 서비스</a></li>
+              <li><a href="#">책나래 서비스</a></li>
+              <li><a href="#">외국학술지 원문 복사</a></li>
+              <li><a href="#">사서에게 물어보세요</a></li>
+              <li><a href="#">도서관 정보나루</a></li>
+            </div>
+          </ul>
+          <ul class="navbar__depth-wrap">
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">신청</li>
+              <li><a href="#">희망도서 신청</a></li>
+              <li><a href="#">강좌 신청</a></li>
+              <li><a href="#">분실물 찾기</a></li>
+              <li><a href="#">단체방문 신청</a></li>
+              <li><a href="#">자원봉사 신청</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">참여</li>
+              <li><a href="#">서울도서관에 바란다</a></li>
+              <li class="go"><a href="#">자주 물어보는 질문</a></li>
+              <li><a href="#">서울에게 물어보세요</a></li>
+              <li><a href="#">자료기증·납본</a></li>
+              <li><a href="#">설문조사</a></li>
+            </div>
+          </ul>
+          <ul class="navbar__depth-wrap">
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">도서관 소개</li>
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">일반 현황</a></li>
+              <li><a href="#">로고</a></li>
+              <li><a href="#">조직·기구</a></li>
+              <li><a href="#">운영규정</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">도서관 소식</li>
+              <li class="go"><a href="#">공지사항</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">도서관 갤러리</a></li>
+              <li><a href="#">서울도서관 TV</a></li>
+            </div>
+            <div class="navbar__depth">
+              <li class="navbar__depth-title">도서관 일정</li>
+              <li><a href="#">일정 및 행사</a></li>
+            </div>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -309,81 +313,95 @@
         <li>보도자료</li>
       </ul>
       <div class="notice__news-wrap">
-				<div class="notice__panel-wrap">
-					<ul class="notice__panel">
-						<li>
-							<a href="#"
-								>&#91;Book택트:코로나 시대 온라인 독서습관&#93; 전자자료 테마전시
-								&#40;2월&#41;</a
-							>
-						</li>
-						<li>
-							<a href="#"
-								>&#91;Book택트:코로나 시대 온라인 독서습관&#93; 전자책 카드리뷰
-								&#40;2월&#41;</a
-							>
-						</li>
-						<li>
-							<a href="#"
-								>서울도서관 대출반납 등 서비스 일부 재개 &#40;1.19.~&#41;</a
-							>
-						</li>
-						<li>
-							<a href="#">&#91;온라인전시&#93; '내 책 속 한 문장' 온라인 전시</a>
-						</li>
-						<li>
-							<a href="#">&#91;안내&#93; 서울도서관 찾아가는 랜선 회원가입!</a>
-						</li>
-					</ul>
-					<ul class="notice__day">
-						<li>2021-01-28</li>
-						<li>2021-01-28</li>
-						<li>2021-01-18</li>
-						<li>2020-12-28</li>
-						<li>2020-11-11</li>
-					</ul>
-				</div>
-				<div class="news__panel-wrap">
-					<ul class="news__panel">
-						<li>
-							<a href="#"
-								>&#40;석간&#41; 서울도서관, 코로나시대 전자책‧오디오북 3배로 확대
-								홈피·모바일로 본다</a
-							>
-						</li>
-						<li>
-							<a href="#"
-								>서울도서관, 한국정보화진흥원과 협력 '소프트웨어코딩 체험
-								특별교육' 운영</a
-							>
-						</li>
-						<li>
-							<a href="#"
-								>서울도서관, 책장 속에 잠들어 있는 헌책 나누는 온라인 한평책방</a
-							>
-						</li>
-						<li>
-							<a href="#"
-								>서울도서관, 13일 포스트코로나 지역서점 방향 모색 '제5회
-								서울서점인대회'</a
-							>
-						</li>
-						<li>
-							<a href="#"
-								>서울시, 독립출판 제작자-동네책방 함께 '온라인 독립출판 북
-								페어'</a
-							>
-						</li>
-					</ul>
-					<ul class="news__day">
-						<li>2021-01-14</li>
-						<li>2020-11-30</li>
-						<li>2020-11-16</li>
-						<li>2020-11-09</li>
-						<li>2020-11-02</li>
-					</ul>
-				</div>
-			</div>
+        <div class="notice__panel-wrap">
+          <ul class="notice__panel">
+            <li>
+              <a href="#"
+                >&#91;Book택트:코로나 시대 온라인 독서습관&#93; 전자자료
+                테마전시 &#40;2월&#41;</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >&#91;Book택트:코로나 시대 온라인 독서습관&#93; 전자책 카드리뷰
+                &#40;2월&#41;</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >서울도서관 대출반납 등 서비스 일부 재개 &#40;1.19.~&#41;</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >&#91;온라인전시&#93; '내 책 속 한 문장' 온라인 전시</a
+              >
+            </li>
+            <li>
+              <a href="#">&#91;안내&#93; 서울도서관 찾아가는 랜선 회원가입!</a>
+            </li>
+          </ul>
+          <ul class="notice__day">
+            <li>2021-01-28</li>
+            <li>2021-01-28</li>
+            <li>2021-01-18</li>
+            <li>2020-12-28</li>
+            <li>2020-11-11</li>
+          </ul>
+        </div>
+        <div class="news__panel-wrap">
+          <ul class="news__panel">
+            <li>
+              <a href="#"
+                >&#40;석간&#41; 서울도서관, 코로나시대 전자책‧오디오북 3배로
+                확대 홈피·모바일로 본다</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >서울도서관, 한국정보화진흥원과 협력 '소프트웨어코딩 체험
+                특별교육' 운영</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >서울도서관, 책장 속에 잠들어 있는 헌책 나누는 온라인
+                한평책방</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >서울도서관, 13일 포스트코로나 지역서점 방향 모색 '제5회
+                서울서점인대회'</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >서울시, 독립출판 제작자-동네책방 함께 '온라인 독립출판 북
+                페어'</a
+              >
+            </li>
+          </ul>
+          <ul class="news__day">
+            <li>2021-01-14</li>
+            <li>2020-11-30</li>
+            <li>2020-11-16</li>
+            <li>2020-11-09</li>
+            <li>2020-11-02</li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+    <!-- library service
+		<section class="service__calender">
+			<div class="calendar">
+				<div class="claendar__header">
+					<span class="month-picker">
+						
+					</span>
+				</div>
+			</div>	
+		</section> -->
   </body>
 </html>
