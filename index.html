@@ -31,24 +31,24 @@
       <!-- Navbar -->
       <nav id="navbar">
         <div class="navbar__wrap">
-					<h1 class="navbar__logo">
-						<img src="imgs/logo.png" alt="서울도서관 로고" />
-					</h1>
-					<ul class="navbar__menu">
-						<li class="navbar__menu-item">
-							<h2>자료검색</h2>
-						</li>
-						<li class="navbar__menu-item">
-							<h2>도서관 이용</h2>
-						</li>
-						<li class="navbar__menu-item">
-							<h2>신청·참여</h2>
-						</li>
-						<li class="navbar__menu-item">
-							<h2>도서관 소개</h2>
-						</li>
-					</ul>
-				</div>
+          <h1 class="navbar__logo">
+            <img src="imgs/logo.png" alt="서울도서관 로고" />
+          </h1>
+          <ul class="navbar__menu">
+            <li class="navbar__menu-item">
+              <h2>자료검색</h2>
+            </li>
+            <li class="navbar__menu-item">
+              <h2>도서관 이용</h2>
+            </li>
+            <li class="navbar__menu-item">
+              <h2>신청·참여</h2>
+            </li>
+            <li class="navbar__menu-item">
+              <h2>도서관 소개</h2>
+            </li>
+          </ul>
+        </div>
         <div class="depth__menu-wrap">
           <ul class="navbar__depth-wrap depth01">
             <div class="navbar__depth">
@@ -159,15 +159,20 @@
 
     <!-- Main slide -->
     <section class="main__slide">
-      <div class="slide__inner">
-        <img src="imgs/slideImg/bn01.png" alt="" />
+      <div class="slide__container">
+        <div class="slide__images">
+          <img src="imgs/slideImg/bn_01.jpg" alt="" />
+          <img src="imgs/slideImg/bn_02.jpg" alt="" />
+          <img src="imgs/slideImg/bn_03.jpg" alt="" />
+        </div>
       </div>
-      <div class="slide__inner">
-        <img src="imgs/slideImg/bn02.jpg" alt="" />
-      </div>
-      <div class="slide__inner">
-        <img src="imgs/slideImg/bn03.jpg" alt="" />
-      </div>
+
+      <button class="slide__prev">
+				<i class="fas fa-angle-left"></i>
+			</button>
+      <button class="slide__next">
+				<i class="fas fa-angle-right"></i>
+			</button>
     </section>
 
     <!-- Search bar -->
@@ -403,5 +408,6 @@
 				</div>
 			</div>	
 		</section> -->
+		
   </body>
 </html>
