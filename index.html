@@ -336,12 +336,12 @@
     <!-- Notice and News -->
     <section class="notice">
       <ul class="notice__button">
-        <li>공지사항</li>
-        <li>보도자료</li>
+        <li><a href="#notice-tab1" class="notice__active">공지사항</a></li>
+        <li><a href="#notice-tab2">보도자료</a></li>
       </ul>
       <div class="notice__news-wrap">
-        <div class="notice__panel-wrap">
-          <ul class="notice__panel">
+        <div id="notice-tab1" class="notice__panel-wrap">
+          <ul class="notice-news__panel">
             <li>
               <a href="#"
                 >&#91;Book택트:코로나 시대 온라인 독서습관&#93; 전자자료
@@ -368,7 +368,7 @@
               <a href="#">&#91;안내&#93; 서울도서관 찾아가는 랜선 회원가입!</a>
             </li>
           </ul>
-          <ul class="notice__day">
+          <ul class="notice-news__day">
             <li>2021-01-28</li>
             <li>2021-01-28</li>
             <li>2021-01-18</li>
@@ -376,8 +376,8 @@
             <li>2020-11-11</li>
           </ul>
         </div>
-        <div class="news__panel-wrap">
-          <ul class="news__panel">
+        <div id="notice-tab2" class="notice__panel-wrap">
+          <ul class="notice-news__panel">
             <li>
               <a href="#"
                 >&#40;석간&#41; 서울도서관, 코로나시대 전자책‧오디오북 3배로
@@ -409,7 +409,7 @@
               >
             </li>
           </ul>
-          <ul class="news__day">
+          <ul class="notice-news__day">
             <li>2021-01-14</li>
             <li>2020-11-30</li>
             <li>2020-11-16</li>
