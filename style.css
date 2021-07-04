@@ -16,6 +16,7 @@
   --color-light-grey: #7c7979;
   --color-grey: #616161;
   --color-dark-grey: #4d4d4d;
+	--color-red: #ff6863;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -62,6 +63,7 @@ button {
 p,
 a,
 li,
+h2,
 span,
 input {
   font-family: 'NanumSquareRound';
@@ -99,11 +101,11 @@ body {
 
 .header__top-menu li a {
   font-size: var(--font-micro);
-	padding: 0px 8px;
+  padding: 0px 8px;
 }
 
 .header__top-menu li a:hover {
-	color: var(--color-main);
+  color: var(--color-main);
 }
 
 /* nav */
@@ -130,7 +132,7 @@ body {
   height: 24px;
   line-height: 24px;
   font-size: var(--font-regular);
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* two depth menu */
@@ -142,7 +144,7 @@ body {
   left: 0;
   right: 0;
   display: none;
-  background: linear-gradient(transparent, rgba(255,255,255,0.95) 10%)
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.95) 10%);
 }
 
 .navbar__menu > li:hover ul {
@@ -153,16 +155,16 @@ body {
 .navbar__depth li a {
   padding: 8px 0;
   text-align: center;
-	font-size: var(--font-small);
+  font-size: var(--font-small);
 }
 
 .navbar__depth a:hover {
-	color: var(--color-main);
+  color: var(--color-main);
 }
 
 .navbar__depth .navbar__depth-title {
   font-weight: var(--weight-semi-bold);
-	font-size: var(--font-regular);
+  font-size: var(--font-regular);
 }
 
 /* Main slide */
@@ -415,4 +417,84 @@ section {
 
 .notice-news__panel li:hover a {
   color: var(--color-main);
+}
+
+/* library schedule */
+.schedule {
+	text-align: center;
+}
+
+.scheduleset {
+	display: flex;
+	margin: 20px 0;
+}
+
+.schedule__left {
+	flex-basis: 60%;
+	padding: 40px;
+	background-color: var(--color-light-white);
+	position: relative;
+}
+
+.schedule__left-event {
+	display: flex;
+	justify-content: space-around
+}
+
+.schedule__left-event img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 5px solid var(--color-white);
+}
+
+.schedule__left-event .textbox {
+	display: block;
+	font-size: var(--font-small);
+	margin-top: 12px;
+}
+
+.textbox p {
+	margin-top: 6px;
+}
+
+.textbox span {
+	padding: 2px 4px;
+	border-radius: 4px;
+	color: var(--color-light-white);
+}
+
+.textbox .red {
+	background-color: var(--color-red)
+}
+
+.textbox .blue {
+	background-color: var(--color-blue);
+}
+
+.schedule__right {
+	flex-basis: 40%;
+	background-color: var(--color-blue);
+}
+
+.schedule__left button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: var(--font-large);
+	color: var(--color-main);
+	transition: color 100ms;
+}
+
+.event__prev {
+	left: 16px;
+}
+
+.event__next {
+	right: 16px;
+}
+
+.event__prev:hover,
+.event__next:hover {
+	color: var(--color-accent);
 }
