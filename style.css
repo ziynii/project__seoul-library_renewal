@@ -421,7 +421,7 @@ section {
 
 /* library schedule */
 .schedule {
-	margin-top: 80px;
+	margin-top: 50px;
 	text-align: center;
 }
 
@@ -544,6 +544,10 @@ section {
 	font-weight: var(--weight-semi-bold);
 }
 
+.all-menu__left li a i {
+	color: var(--color-main);
+}
+
 .all-menu__right {
 	flex-basis: 60%;
 }
@@ -631,7 +635,7 @@ footer {
 	color: blue
 }
 
-.footer__box1-right .fa-youtube-square {
+.footer__box1-right .fa-youtube {
 	color: red;
 }
 
