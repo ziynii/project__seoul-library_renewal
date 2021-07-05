@@ -421,6 +421,7 @@ section {
 
 /* library schedule */
 .schedule {
+	margin-top: 80px;
 	text-align: center;
 }
 
@@ -517,6 +518,7 @@ section {
 
 /* All menu */
 .all-menu {
+	margin-top: 80px;
 	display: flex;
 	align-items: center;
 }
@@ -583,4 +585,66 @@ section {
 
 .claerfix {
 	content: ""; display: block; clear: both;
+}
+
+/* footer */
+footer {
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 80px;
+}
+
+.footer__box1 {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--color-dark-grey);
+}
+
+.footer__box1-left {
+	display: flex;
+}
+
+.footer__box1-left li {
+	height: 15px;
+	line-height: 15px;
+	margin-right: 12px;
+	font-size: var(--font-small);
+}
+
+.footer__box1-left li .red {
+	color: var(--color-red);
+}
+
+.footer__box1-right {
+	display: flex;
+}
+
+.footer__box1-right li {
+	margin-left: 12px;
+}
+
+.footer__box1-right li a{
+	font-size: 20px;
+}
+
+.footer__box1-right .fa-facebook-square {
+	color: blue
+}
+
+.footer__box1-right .fa-youtube-square {
+	color: red;
+}
+
+.footer__box2 {
+	margin: 80px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.footer__box2 img {
+	margin-right: 10px;
+}
+
+.footer__box2-text {
+	font-size: var(--font-micro);
 }
