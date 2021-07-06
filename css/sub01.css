@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* color */
+  --color-main: #0094cf;
+  --color-accent: #004587;
+  --color-light-white: #eeeeee;
+  --color-white: #ffffff;
+  --color-dark-white: #bdbdbd;
+  --color-light-grey: #7c7979;
+  --color-grey: #616161;
+  --color-dark-grey: #4d4d4d;
+	--color-red: #ff6863;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* font-size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 14px;
+  --font-micro: 12px;
+
+  /* size */
+
+  /* Font Weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+.book__check {
+	border-top: 2px solid var(--color-main);
+}
+
+.check__container{
+	max-width: 1200px;
+	margin: 50px auto;
+}
+
+.check__subtitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.check__subtitle p {
+	font-size: var(--font-small);
+	cursor: pointer;
+}
+
+.check__subtitle .bluetext {
+	color: var(--color-main);
+}
+
+.check__btn {
+	display: flex;
+	margin-top: 50px;
+	padding: 20px 0;
+	border-top: 1px solid var(--color-dark-grey);
+}
+
+.check__btn li {
+	margin-right: 15px;
+	border-right: 1px solid var(--color-light-grey);
+}
+
+.check__btn a {
+	padding: 8px 15px;
+	font-size: var(--font-small);
+}
+
+.check__btn a:hover {
+	color: var(--color-main);
+}
+
+.check__active {
+	color: var(--color-main);
+}
+
+.check__con {
+	position: relative;
+	height: 1280px;
+}
+
+.check__con-wrap {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	position: absolute;
+}
+
+.check__con-item {
+	width: 186px;
+	height: 260px;
+	margin-right: 54px;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+.check__con-item:nth-child(5n) {
+	margin-right: 0;
+}
+
+.booksub img{
+	width: 186px;
+	height: 258px;
+	border: 1px solid var(--color-light-white);
+}
+
+.check__con-item .caption {
+	width: 186px;
+	height: 258px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #00000090;
+	color: var(--color-light-white);
+	opacity: 0;
+	transition: opacity 300ms;
+}
+
+.check__con-item:hover .caption {
+	opacity: 1;
+}
+
+.caption p {
+	font-size: var(--font-small);
+	padding: 50px 20px;
+} 
+
+.caption span {
+	font-size: var(--font-small);
+	padding: 6px 10px;
+	margin-left: 20px;
+}
+
+.caption span {
+	border: 1px solid var(--color-light-white);
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+
+
