@@ -65,7 +65,8 @@ a,
 li,
 h2,
 span,
-input {
+input,
+div {
   font-family: 'NanumSquareRound';
 }
 
@@ -431,16 +432,16 @@ section {
 
 .scheduleset {
 	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .schedule__left {
 	position: relative;
-	background-color: var(--color-light-white);
 	padding: 20px 0;
 	width: 630px;
 	height: 380px;
 	overflow: hidden;
-	float: left;
 }
 
 .schedule__left-event {
@@ -479,11 +480,11 @@ section {
 }
 
 .event__prev {
-	left: 12px;
+	left: 4px;
 }
 
 .event__next {
-	right: 12px;
+	right: 4px;
 }
 
 .event__prev:hover,
@@ -504,7 +505,7 @@ section {
 .textbox span {
 	padding: 2px 4px;
 	border-radius: 4px;
-	color: var(--color-light-white);
+	color: var(--color-white);
 }
 
 .textbox .red {
@@ -520,8 +521,106 @@ section {
 }
 
 .schedule__right {
+	width: 470px;
 	height: 380px;
-	background-color: var(--color-main);
+	padding: 30px;
+	background-color: #0094cf40;
+	border-radius: 4px;
+}
+
+.calendar__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.calendar__year-month {
+	font-size: var(--font-regular);
+	color: var(--color-dark-grey);
+}
+
+.calendar__nav {
+	display: flex;
+	border: 1px solid var(--color-white);
+	border-radius: 5px;
+}
+
+.calendar__navbtn {
+	width: 28px;
+	height: 30px;
+	font-size: var(--font-micro);
+	background-color: #ffffff30;
+	color: var(--color-dark-grey);
+}
+
+.go-today {
+	width: 55px;
+	border-left: 1px solid var(--color-white);
+	border-right: 1px solid var(--color-white);
+}
+
+.calendar__days {
+	display: flex;
+	margin: 25px 0 10px 0;
+}
+
+.calendar__day {
+	width: calc(100% / 7);
+	text-align: center;
+	color: var(--color-grey);
+}
+
+.calendar__dates {
+	display: flex;
+	flex-flow: row wrap;
+	height: 230px;
+	border-top: 1px solid  var(--color-white);
+	border-right: 1px solid  var(--color-white);
+}
+
+.calendar__date {
+	width: calc(100% / 7);
+	font-size: var(--font-micro);
+	padding: 5px;
+	text-align: right;
+	border-left: 1px solid  var(--color-white);
+	border-bottom: 1px solid  var(--color-white);
+	color: var(--color-grey);
+}
+
+.calendar__day:nth-child(7n + 1),
+.calendar__date:nth-child(7n + 1) {
+	color: var(--color-red);
+}
+
+.calendar__day:nth-child(7n),
+.calendar__date:nth-child(7n) {
+	color: var(--color-main);
+}
+
+.calendar__date:nth-child(7n+2) .this {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background-color: var(--color-yellow);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	float: right;
+	position: relative;
+	bottom: 2px;
+	left: 2px;
+}
+
+.captiontext {
+	font-size: var(--font-micro);
+	margin: 4px 0;
+	text-align: left;
+	color: var(--color-dark-grey);
+}
+
+.other {
+	opacity: 0.3;
 }
 
 /* All menu */
