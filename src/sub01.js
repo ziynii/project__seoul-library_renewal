@@ -22,3 +22,6 @@ for (let i = 0; i < checkTargetLink.length; i++) {
   });
 }
 document.getElementById('check-tab1').style.display = 'flex';
+document.getElementById('check-tab2').style.display = 'none';
+document.getElementById('check-tab3').style.display = 'none';
+document.getElementById('check-tab4').style.display = 'none';

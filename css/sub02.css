@@ -16,7 +16,7 @@
   --color-light-grey: #7c7979;
   --color-grey: #616161;
   --color-dark-grey: #4d4d4d;
-	--color-red: #ff6863;
+  --color-red: #ff6863;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -37,3 +37,104 @@
   --weight-regular: 400;
 }
 
+.qna {
+  border-top: 2px solid var(--color-main);
+}
+
+.qna__container {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.qna__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qna__subtitle p {
+  font-size: var(--font-small);
+  cursor: pointer;
+}
+
+.qna__subtitle .bluetext {
+  color: var(--color-main);
+}
+
+.qna__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+#qna-search {
+  height: 45px;
+  width: 100px;
+  border: 1px solid var(--color-dark-white);
+}
+
+.qna__search-box {
+  border: 1px solid var(--color-dark-white);
+  border-left: none;
+}
+
+#search-box {
+  font-size: var(--font-small);
+  outline: none;
+  border: none;
+  width: 325px;
+  line-height: 42px;
+  padding: 0 8px;
+}
+
+.search-btn {
+  padding: 0 16px;
+  height: 43px;
+  background-color: var(--color-light-white);
+}
+
+.qna__content > div {
+  border-top: 1px solid var(--color-dark-white);
+}
+
+.ques__last {
+	border-bottom: 1px solid var(--color-dark-white);
+}
+
+.qna__ques-title {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.qna__ans {
+  line-height: 3em;
+  padding: 20px 10px;
+  background-color: var(--color-light-white);
+  display: none;
+}
+
+.qna__active .qna__ans {
+  display: block;
+}
+
+.pageBtn {
+  margin-top: 40px;
+}
+
+.pageBtn ul {
+  display: flex;
+  justify-content: center;
+}
+
+.pageBtn li {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.pageBtn li:nth-child(1) {
+  border: 1px solid var(--color-dark-white);
+}
